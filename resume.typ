@@ -23,6 +23,17 @@
 #let fa-wrench = icon("icons/fa-wrench.svg")
 #let fa-work = icon("icons/fa-work.svg")
 #let fa-selfeva = icon("icons/fa-selfeva.svg")
+#let fa-oracle = icon("icons/fa-oracle.svg")
+#let fa-mysql = icon("icons/fa-mysql.svg")
+#let fa-apachehive = icon("icons/fa-apachehive.svg")
+#let fa-apachespark = icon("icons/fa-apachespark.svg")
+#let fa-apachehadoop = icon("icons/fa-apachehadoop.svg")
+#let fa-apacheairflow = icon("icons/fa-apacheairflow.svg")
+#let fa-dolphin = icon("icons/fa-dolphin.svg")
+#let fa-shell = icon("icons/fa-shell.svg")
+#let fa-python = icon("icons/fa-python.svg")
+#let fa-pandas = icon("icons/fa-pandas.svg")
+#let fa-sqlalchemy = icon("icons/fa-sqlalchemy.svg")
 
 // 设置简历选项与头部
 #show: resume.with(
@@ -134,7 +145,7 @@
   ]
 ][
   #text(size: 1.0em)[ 
-  *海口农村商业银行股份有限公司海甸支行* #h(1fr) *数据分析师*
+  *海口农村商业银行股份有限公司* #h(1fr) *数据分析师*
 ]
   
 
@@ -142,10 +153,6 @@
 
 任职要求：具备数据分析能力，熟悉机器学习与人工智能技术。
 
-
-  岗位职责：利用大数据分析技术，为银行业务决策提供支持，推动人工智能在银行业务中的应用。
-
-任职要求：具备数据分析能力，熟悉机器学习与人工智能技术。
 ]
 
 
@@ -164,58 +171,69 @@
 
 == #fa-wrench 技术栈
 
-#sidebar(with-line: false, side-width: 12%)[
-  *操作系统*
-  
-  *掌握*
-  
-  *熟悉*
 
+#sidebar(with-line: false, side-width: 9%)[
+  *熟练掌握*
+][
+  关系型数据库#fa-oracle Oracle的语法并使用SQL语言;具有一定的 SQL 性能调优能力;使用 PL/SQL 处理存储过程，增量同步、函数以及索引、表分区等 #h(0.5em) 
+]
+#sidebar(with-line: false, side-width: 9%)[
+  *熟练掌握*
+][
+  #fa-apachehadoop Hadoop 生态圈相关知识;熟悉 Hdfs 原理;Mapreduce 的工作流程;具有一定#fa-apachehive Hive 调优经验 #h(0.5em) 
+]
+#sidebar(with-line: false, side-width: 9%)[
+  *熟悉*
+][
+   Kettle 、Datax 、Sqoop等 ETL 工具;能够将 Oracle、Mysql 与 Hive/Hdfs 之间的数据进行导入导出 #h(0.5em) 
+]
+#sidebar(with-line: false, side-width: 9%)[
+  *熟悉*
+][数据仓库建模，范式建模和维度建模;
+   数据仓库中 ODS 层到 DW 层数据清洗、转换、加载 #h(0.5em) 
+]
+#sidebar(with-line: false, side-width: 9%)[
+  *熟悉*
+][
+  关系型数据库#fa-mysql Mysql的语法并使用SQL语言;具有一定的 SQL 性能调优能力 #h(0.5em) 
+]
+#sidebar(with-line: false, side-width: 9%)[
+  *熟悉*
+][
+  #fa-linux  Linux 操作系统常用指令;#fa-shell shell 脚本语法及使用;Azkaban 调度工具的使用 #h(0.5em) 
+]
+#sidebar(with-line: false, side-width: 9%)[
   *了解*
 ][
-  #fa-linux Linux, #h(0.5em) #fa-windows Windows
-  
-  React, JavaScript, Python
-  
-  Vue, TypeScript, Node.js
-
-  Webpack, Java
+  #fa-dolphin DolphinSchedular、#fa-apacheairflow AirFlow调度工具的使用;#fa-apachespark Spark计算引擎的使用 #h(0.5em) 
+]
+#sidebar(with-line: false, side-width: 9%)[
+  *了解*
+][
+   FineReport 报表开发工具;FineBI 实现数据的可视化展示 #h(0.5em) 
+]
+#sidebar(with-line: false, side-width: 9%)[
+  *了解*
+][
+  #fa-python Python3基础语法;#fa-pandas Pandas库实现简单的数据分析清洗;#fa-sqlalchemy SQLAlchemy框架实现数据传输;Pyecharts库实现简单的数据可视化 #h(0.5em) 
 ]
 == #fa-code 项目经历
 
 #item(
-  link(
-    "https://github.com/liming-dev/cloud-platform",
-    [ *轻量级容器云平台* ],
-  ),
-  [ *实验室项目* ],
-  date[ 2022 年 03 月 – 2022 年 12 月 ],
+  [ *数据仓库* ],
+  [ *银行项目* ],
+  date[ 2021 年 12 月 – 2022 年 07 月 ],
 )
 
-#tech[ Golang, Docker, Kubernetes ]
+#tech[ Hive, Oracle, Hadoop, Kettle, Datax, Sqoop ]
 
-基于 Kubernetes 的容器管理平台,提供Web界面的容器编排服务
+基于数据仓库的银行数据分析平台
 
-- 设计实现了基于 RBAC 的多租户权限管理系统
-- 开发了容器资源动态伸缩和负载均衡模块
-- 使用 Prometheus 和 Grafana 构建监控告警系统
+- 设计实现了数据仓库的 ODS 层到 DW 层的数据清洗、转换和加载
+- 使用 Kettle 进行数据 ETL,编写增量同步脚本
 
-#item(
-  link(
-    "https://github.com/liming-dev/distributed-cache",
-    [ *分布式缓存系统* ],
-  ),
-  [ *个人项目* ],
-  date[ 2023 年 01 月 - 2023 年 04 月 ],
-)
-
-#tech[ Golang, Redis, etcd ]
-
-一个支持分布式部署的高性能缓存系统
-
-- 实现了一致性哈希算法进行数据分片
-- 采用 Raft 协议保证集群一致性
-- 支持缓存自动过期和 LRU 淘汰策略
+- 使用 Sqoop 将 Oracle 数据导入到 Hive 中
+- 使用 HiveQL 进行数据分析，编写数据清洗脚本
 
 
 == #fa-selfeva 自我评价
