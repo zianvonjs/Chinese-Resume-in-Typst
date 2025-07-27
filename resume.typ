@@ -95,11 +95,7 @@
       content: "个人主页:zianvonjs.github.io/",
       link: "https://zianvonjs.github.io/",
     ),
-    (
-      icon: fa-github,
-      content: "Github主页:github.com/zianvonjs",
-      link: "https://github.com/zianvonjs",
-    ),
+
     (
       icon: fa-leetcode,
       content: "Leetcode主页:leetcode.cn/u/practical-diracxwn/",
@@ -137,7 +133,7 @@
   #block(spacing: 0.5em)[
     #text(size: 0.9em, fill: gray)[2021.09]
     #ellipse(width: 3pt, height: 3pt, fill: theme-color)
-    #line(start: (0pt, 0pt), end: (0pt, 0.5cm), stroke: 0.05em)
+    #line(start: (0pt, 0pt), end: (0pt, 0.3cm), stroke: 0.05em)
     #ellipse(width: 3pt, height: 3pt, fill: theme-color)
     #text(size: 0.9em, fill: gray)[2022.08]
   ]
@@ -145,11 +141,11 @@
   #text(size: 1.0em)[ 
   *海口农村商业银行股份有限公司* #h(1fr) *数据分析师*
 ]
-  
 
-*岗位职责：*利用大数据分析技术，为银行业务决策提供支持，推动人工智能在银行业务中的应用。
+\
+*岗位职责：*就职于信息科技与数字银行部,利用大数据分析技术，为银行业务决策提供支持;配合部门组织开展应急演练,
+确保在灾害、系统故障等场景下的应急响应。
 
-*任职要求：*具备数据分析能力，熟悉机器学习与人工智能技术。
 
 ]
 
@@ -226,10 +222,10 @@
 #tech[ Hive, Oracle+pl/sql, Hadoop, Kettle, finereport ]
 
 项目描述：
-启动风险管理设计与实施项目，旨在达到风险控制能力和工作效率的全面提升。风险
-管理方向基本分为客户主题、经营效率主题、风险管控主题三个方面，通过不良贷款
-率、贷款余额、不良贷款余额、逾期金额、企业总资产、总负债、净利润等指标进行
-可视化展示，给到行里的管理者，行方就可以根据这些指标进行相应的风险评估。
+响应海南自由贸易港建设号召,启动我行风险评估与预警系统建设项目，旨在通过数据分析手段提升风险管理能力。
+项目主要包括不良贷款明细、风险客户明细、授信业务参考，贷前风险评估、提前预警等内容，旨在达到风险控制能力和工作效率的全面提升。\
+
+职责描述：
 - 参与分层讨论与搭建、需求分析、计算指标、取值的源数据以及取数逻辑
 - 使用kettle对源数据进行清洗、规范化,清洗规范化的数据存放到贴源层ods
 - 参与编写 dw 层的 pl/sql 存储过程以及日志记录
